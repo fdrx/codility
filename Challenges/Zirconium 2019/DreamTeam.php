@@ -1,5 +1,7 @@
 <?php
 
+// 100%
+
 function solution($A, $B, $F) {
 
     if ($F == 0) {
@@ -22,7 +24,7 @@ function solution($A, $B, $F) {
     $i = 0;
 
     foreach($C as $k => $v) {
-        if($i < (count($B) - $F)) {
+        if ($i < (count($B) - $F)) {
             $sum += $B[$k];
         } else {
             $sum += $A[$k];
@@ -33,3 +35,5 @@ function solution($A, $B, $F) {
     return $sum;
 
 }
+
+echo solution([7, 1, 4, 4], [5, 3, 4, 3], 2);
